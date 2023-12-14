@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>UESC</title>
+</head>
+<body>
+    <div class="menu">
+        <h2><img src="Uesc-logo.png" alt=""> UNIVERSIDADE ESTADUAL DE SANTA CRUZ</h2>
+        <div class="grid-container">
+            <div class="grid-item menu-item">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="http://www.uesc.br/centros/">Centros e Grupos de Pesquisa</a></li>
+                    <li><a href="http://www.uesc.br/arint/">Internacional</a></li>
+                    <li><a href="http://www.uesc.br/laboratorios/">Laboratórios</a></li>
+                    <li><a href="http://www.uesc.br/mapa/">Mapa da Uesc</a></li>
+                    <li><a href="http://www.uesc.br/nucleos/">Núcleos</a></li>
+                    <li><a href="http://www.uesc.br/projetos/">Projetos</a></li>
+                    <li><a href="http://www.uesc.br/proad/index.php?item=conteudo_gera_requerimento_academico.php">PROTOCOLO DIGITAL</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-item" id="NOTICIAS">
+                <span style="color: black;">NOTICIAS</span>
+                <br>
+                <div>
+                  <ul>
+                    <p>-> Cursos de Graduação da Uesc</p>
+                    <li><a class="no-border" href="https://www2.uesc.br/noticias/902/Cursos-de-graduacao-da-Uesc-entre-os-melhores-do-Brasil">Avaliação é do Ranking Universitário Folha</a></li>
+                    <br>
+                    <p>-> Uesc Sobe no Ranking</p>    
+                    <li><a class="no-border" href="https://www2.uesc.br/noticias/896/Uesc-sobe-no-ranking">RUF Aponta as Melhores Universidades do Brasil</a></li>
+
+                    <p>-> Previsao do Tempo</p>    
+                    <li><a class="no-border" href="https://www.msn.com/pt-br/clima/forecast/in-Ubaitaba,Bahia?loc=eyJsIjoiVWJhaXRhYmEiLCJyIjoiQmFoaWEiLCJjIjoiQnJhc2lsIiwiaSI6IkJSIiwiZyI6InB0LWJyIiwieCI6Ii0zOS4zMjQiLCJ5IjoiLTE0LjMxMyJ9&ocid=ansmsnweather&weadegreetype=C">Confira </a></li>
+
+                    <p>-> Meio Acadêmico</p>    
+                    <li><a class="no-border" href="https://www2.uesc.br/noticias/896/Uesc-sobe-no-ranking">RUF Aponta as Melhores Universidades do Brasil</a></li>
+
+                  </h3>
+                  <script src="https://unpkg.com/@climatempo/advisor-sdk"></script>
+                  <script>
+                    const advisor = new Advisor({
+                      key: '9c3e6962b09f46b3436906e7b4754f43',
+                    });
+                    const getWeather = async () => {
+                      const weather = await advisor.getWeather('Ilhéus', 'BA');
+                
+                      const conditions = weather.weather.description;
+                
+                      document.getElementById('weather-conditions').textContent = conditions;
+                    };
+                    getWeather();
+      
+                   
+                  </script>
+                    
+                  </ul>  
+                  <br>
+              
+                  
+                  
+                </div>
+              </div>
+              
+              
+            <div class="grid-item" id="DESTAQUE">
+                <span style="color: black;">DESTAQUE</span>
+                <div>
+                  <img src="imagem1.jpg" alt="Imagem 1">
+                </div>
+                <div>
+                  <img src="cesta.png" alt="cesta 2">
+                </div>
+            </div>
+              
+            <div class="grid-item" id="SERVIÇOS" style="text-align: left;">
+                <span style="color: black;">SERVIÇOS</span>
+                <p>
+                  <ul>
+                    <li>Biblioteca</li>
+                    <li>Laboratórios</li>
+                    <li>Reitoria</li>
+                    <li>Pró-Reitoria de Graduação</li>
+                </ul>
+                 
+                </p>
+            </div>
+              
+            <div class="grid-item" id="Academico" style="text-align: right;">
+                <span style="color: black;">ACADEMICO</span>
+                <p>
+          
+                    <ul>
+                        <li>Inscrições</li>
+                        <li>Disciplinas</li>
+                        <li>Bolsas de estudo</li>
+                        <li>Estágios</li>
+                    </ul>
+                </section>
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+   
+</body>
+</html>
