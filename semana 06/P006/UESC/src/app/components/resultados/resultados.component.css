@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #eaedef;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(6, 6, 6, 0.1);
     margin-bottom: 20px;
 }
 
@@ -27,7 +27,7 @@ body {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    color: #005493;
+    color: #200093;
     padding: 40px 0;
     font-family:'Bebas Neue', sans-serif;
     grid-column: span 3;
@@ -38,7 +38,7 @@ body {
 }
 
 #noticias, #servicos, #resultados {
-    background-color: #f8f9fa;
+    background-color: #e0e5ea;
 }
 
 @media (max-width: 500px) {
